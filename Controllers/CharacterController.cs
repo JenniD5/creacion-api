@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using simpson_net_web_api.Dependencies;
-using todoapi.Models;
+using simpson_net_web_api.Models;
 
-namespace todoapi.Controllers
+namespace simpson_net_web_api.Controllers
 {
     [Route("[controller]")
     [Controller]

@@ -1,4 +1,4 @@
-namespace simpsons_net_web_api.Models
+namespace simpsons_net_web_api.Models;
 {
     public class Character
     {

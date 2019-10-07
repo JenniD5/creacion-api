@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using todoapi.Models;
+using simpsoms_net_web_ap.Models;
 using System.Collections.Generic;
 
-namespace todoapi.Dependencies
+namespace simpsoms_net_web_api.Dependencies
 {
     public interface ICharacter
     {
