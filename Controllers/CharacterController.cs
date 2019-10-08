@@ -17,7 +17,10 @@ namespace simpsons_net_web_api.Controllers
                 FirstName = "Homero",
                 SecondName = "Jay",
                 LastName = "Simpsons",
-                Age = 34
+                Age = 34,
+                Photo = "http://static.t13.cl/images/sizes/1200x675/1455720735-19-homer.jpg",     
+                
+               
             },
 
             new Character

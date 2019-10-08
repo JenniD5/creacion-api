@@ -7,7 +7,7 @@ const simname2=document.getElementById("name2");
 const simsecond2=document.getElementById("secondname2");
 const simedad2=document.getElementById("edad2");
 const simapellido2=document.getElementById("apellido2");
-
+const photo1=document.getElementById("imagen");
 
 
 
@@ -22,6 +22,8 @@ let getSimpsonData=async()=>{
     simpsonSECONDname.innerText=secondName;
     simpsonsEdad.innerText=age;
     simpsonsLast.innerText=lastName;
+    const ImgSIM = simpsons.photo;
+    photo.src=ImgSIM;
 };
 
 getSimpsonData();
