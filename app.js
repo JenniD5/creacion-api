@@ -7,9 +7,13 @@ const simname2=document.getElementById("name2");
 const simsecond2=document.getElementById("secondname2");
 const simedad2=document.getElementById("edad2");
 const simapellido2=document.getElementById("apellido2");
-const photo1=document.getElementById("imagen");
 
 
+const nombre3=document.getElementById("name3");
+const secondName3=document.getElementById("second3");
+const simapellido3=document.getElementById("apellido3");
+const simedad3=document.getElementById("edad3");
+const trabajo=document.getElementById("job3");
 
 const simpsonsURL='https://localhost:5001/simpsons/Character';
 
@@ -44,3 +48,26 @@ let getSimpsonData2= async()=>{
 };
 
 getSimpsonData2();
+
+
+
+
+let getSimpsonData3= async()=>{
+    const response=await fetch (`${simpsonsURL}/2`);
+    const simpsons=await response.json();
+    console.log(simpsons);
+    const{firstName, secondName, lastName, age, job}=simpsons;
+    nombre3.innerText=firstName;
+    second3.innerText=secondName;
+    simapellido3.innerText=lastName;
+    simedad3.innerText=age;
+    trabajo.innerText=job;
+    
+
+};
+
+getSimpsonData3();
+
+
+
+

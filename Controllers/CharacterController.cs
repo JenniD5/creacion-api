@@ -18,9 +18,6 @@ namespace simpsons_net_web_api.Controllers
                 SecondName = "Jay",
                 LastName = "Simpsons",
                 Age = 34,
-                Photo = "http://static.t13.cl/images/sizes/1200x675/1455720735-19-homer.jpg",     
-                
-               
             },
 
             new Character
@@ -28,7 +25,18 @@ namespace simpsons_net_web_api.Controllers
                 FirstName = "Bartolomeo",
                 SecondName = "",
                 LastName = "Simpsons",
-                Age = 10
+                Age = 10,
+            },
+
+             new Character
+            {
+                FirstName = "Marjorie",
+                SecondName = "Bouvier",
+                LastName = "Simpsons",
+                Age = 14,
+                Job="Ama de casa",
+                Description="Es la esposa de Homero Simpson, y madre de 3 hijos llamados: Bart Simpson de 10 años, Lisa Simpson de 8 y Maggie Simpson", 
+
             },
         };
 
