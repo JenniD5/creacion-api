@@ -45,6 +45,7 @@ let getSimpsonData2= async()=>{
     simsecond2.innerText=secondName;
     simedad2.innerText=age;
     simapellido2.innerText=lastName;
+    
 };
 
 getSimpsonData2();
