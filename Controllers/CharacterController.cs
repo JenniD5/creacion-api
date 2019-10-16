@@ -86,7 +86,7 @@ namespace simpsons_net_web_api.Controllers
         {
             List<Character> characters=new List<Character>();
             SqlConnection conn=new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("select*from tbl_caracter", conn);
+            SqlCommand cmd = new SqlCommand("select*from tbl_character", conn);
             conn.Open();
             SqlDataReader reader= cmd.ExecuteReader();
             while (reader.Read())
@@ -94,9 +94,9 @@ namespace simpsons_net_web_api.Controllers
              Character character = new Character
              {
                Id= reader.GetInt64(reader.GetOrdinal("id")),
-               FirstName =reader.GetString(reader.GetOrdinal("firstname")),
-               SecondName =reader.GetString(reader.GetOrdinal("secondname")),
-               LastName=reader.GetString(reader.GetOrdinal("lastname")),
+               FirstName =reader.GetString(reader.GetOrdinal("firstName")),
+               SecondName =reader.GetString(reader.GetOrdinal("secondName")),
+               LastName=reader.GetString(reader.GetOrdinal("lastName")),
                Age = reader.GetInt32(reader.GetOrdinal("age")),
                Description = reader.GetString(reader.GetOrdinal("descp")),
                Job=reader.GetString(reader.GetOrdinal("job")),
