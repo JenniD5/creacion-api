@@ -11,13 +11,13 @@ namespace simpsons_net_web_api.Modules
         int height;
         int weight;
         string birthDate;
-        string photo;
+    
         string job;
         string description;
 
         public Character(){}
 
-        public Character(Int64 id ,string firstName, string secondName, string lastName, int age, int height, int weight, string birthDate, string photo, string job, string description)
+        public Character(Int64 id ,string firstName, string secondName, string lastName, int age, int height, int weight, string birthDate, string job, string description)
         {
             this.firstName = firstName;
             this.secondName = secondName;
@@ -26,7 +26,7 @@ namespace simpsons_net_web_api.Modules
             this.height = height;
             this.weight = weight;
             this.birthDate = birthDate;
-            this.photo = photo;
+           
             this.job = job;
             this.description = description;
             this.id=id;
@@ -39,7 +39,7 @@ namespace simpsons_net_web_api.Modules
         public int Height { get => height; set => height = value; }
         public int Weight { get => weight; set => weight = value; }
         public string BirthDate { get => birthDate; set => birthDate = value; }
-        public string Photo { get => photo; set => photo = value; }
+      
         public string Job { get => job; set => job = value; }
         public string Description { get => description; set => description = value; }
         public Int64 Id{get=> id; set=> id=value;}
